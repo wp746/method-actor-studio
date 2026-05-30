@@ -38,9 +38,9 @@ To make AI facial expressions "enter the mind, brain, and soul," every generated
    - Assign exact muscle groups contraction and relaxation transitions (e.g., zygomatic major contracting while orbicularis oculi is dead/relaxed for a creepy fake smile).
    - Incorporate raw physiological secretions (tears, nose-flaring, saliva threads) to maximize realism.
 3. **Seedance 2.0 Director Packaging (导演·镜头包装)**:
-   - Wrap the details into a professional camera setting: `电影级人物面部特写，纯色背景，柔和自然光。10秒连续微表情转换，显式加入面部肌肉控制，无对话`.
+   - Prefix all prompt outputs with a clear **Character Reference Image Directive** to force Seedance 2.0 to read the uploaded character asset and maintain identity consistency: `根据上传的角色参考图，电影级人物面部特写... (Based on the character in the reference image, cinematic extreme close-up of the face...)` and explicitly command Seedance to keep facial features and identity consistent.
    - Output dual-format deliverables (Timeline-segmented and Continuous Narrative Flow).
-   - Enforce 25fps, 4K rendering specifications, and high-fidelity skin textures.
+   - Enforce 25fps, 4K rendering specifications, high-fidelity skin textures, and zero dialogue.
 
 ---
 
