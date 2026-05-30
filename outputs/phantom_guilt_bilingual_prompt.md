@@ -3,6 +3,7 @@
 > **项目名称**：荣耀之巅的罪恶幻影 (The Sinful Phantom at the Peak of Glory)  
 > **视频规格**：15秒连续微表情转换 | 25帧/秒 | 4K高拟真渲染 | 无对话  
 > **镜头与光影**：电影级人物面部极度特写，戏剧性明暗对比光 (卡拉瓦乔风格)，暗色微虚化背景  
+> **读图锚定锁**：已显式启用“根据上传的角色参考图”及“身份一致性锁”，适配 Seedance 2.0 图像生成视频 (Image-to-Video) 工业流，防止角色变异与五官漂移。  
 
 ---
 
@@ -27,7 +28,7 @@
 
 ### 🇨🇳 中文生产版 (Chinese Version)
 ```text
-电影级人物面部特写，暗色微虚化背景，戏剧性明暗对比光。15秒连续微表情转换，显式加入面部肌肉控制，无对话：
+根据上传的角色参考图，电影级人物面部特写，暗色微虚化背景，戏剧性明暗对比光。严格保持参考图中角色的五官面容与身份一致性。15秒连续微表情转换，显式加入面部肌肉控制，无对话：
 
 [0-4秒] 强颜欢笑与惊愕骤停：角色原本双眼含笑，颧大肌与笑肌收缩，嘴角优雅两侧上扬，露出完美的明星式微笑；在第2.5秒时，双眼突然定格锁死镜头方向，额肌陡然猛烈收缩，双眉耸高，额头挤出数道横向动态深纹，提上睑肌强烈拉紧，双眼瞪大至极限露出眼白，瞳孔骤然紧缩颤抖。笑容瞬间凝固在脸上，咬肌骤然紧咬，呈现出极具反差的震惊防备感。
 
@@ -40,7 +41,7 @@
 
 ### 🇺🇸 英文生产版 (English Version)
 ```text
-Cinematic extreme close-up of a human face, dark blurred background, dramatic chiaroscuro lighting. 15-second continuous micro-expression morphing, explicit facial muscle controls, no dialogue:
+Based on the character in the reference image, cinematic extreme close-up of a human face, dark blurred background, dramatic chiaroscuro lighting. Maintain character identity and facial consistency, 15-second continuous micro-expression morphing, explicit facial muscle controls, no dialogue:
 
 [0-4s] Forced Smile to Sudden Shock: The character initially smiles elegantly with the zygomaticus major and risorius muscles contracted, lifting the corners of the mouth smoothly. At 2.5s, the eyes suddenly lock onto the lens; the frontalis muscle contracts intensely, raising the eyebrows and creating deep dynamic horizontal forehead wrinkles; the levator palpebrae superioris pulls up strongly, widening the eyes to their limit, exposing the white sclera as pupils contract and tremor. The smile freezes instantly, masseters clenching tight in sheer shock.
 
@@ -48,7 +49,7 @@ Cinematic extreme close-up of a human face, dark blurred background, dramatic ch
 
 [10-15s] Tragic Collapse and Mask Defense: Absolute emotional surrender. The eyelids blink slowly, releasing large, heavy teardrops that stream down the cheeks, leaving wet, reflective trails. The depressor labii inferioris relaxes, parting the mouth in silent hollow breathing; two thin, translucent saliva threads (1-2cm) stretch from the corners of the mouth, glistening under the chiaroscuro light. The entire facial muscle group spasms and collapses; eyebrows sag but remain heavy, and the gaze goes completely empty, hollow, and out of focus.
 
-Flawless organic transitions from an elegant facade to visceral psychological breakdown without any artificial neutral states. Highly detailed skin texture, visible pores, 25fps, 4K.
+Flawless organic transitions from an elegant facade to visceral psychological breakdown without any artificial facial blends. Highly detailed skin texture, visible pores, 25fps, 4K.
 ```
 
 ---
@@ -57,12 +58,12 @@ Flawless organic transitions from an elegant facade to visceral psychological br
 
 ### 🇨🇳 中文生产版 (Chinese Version)
 ```text
-电影级人物面部极度特写，暗色微虚化背景，戏剧性明暗对比光。15秒连续微表情转换，显式加入面部肌肉控制，无对话：
+根据上传的角色参考图，电影级人物面部极度特写，暗色微虚化背景，戏剧性明暗对比光。严格保持参考图中角色的五官面容与身份一致性。15秒连续微表情转换，显式加入面部肌肉控制，无对话：
 画面开始，角色原本挂着完美得体的明星微笑，颧大肌上提使苹果肌饱满隆起，然而在第3秒时其视线突然锁死镜头前方，额肌陡然收缩将双眉高高提拉，额头挤出深刻的动态横褶，双眼因恐惧睁大至极限，瞳孔发生高频颤搐。随后，角色面部肌肉开始发生惨烈拉扯，皱眉肌向内死死拧紧成川字，眼周肌肉紧绷泛红，眼眶快速蓄满盈盈泪汽，嘴角笑肌与降口角肌发生极具张力的对抗，导致下唇瓣与下巴颏肌高频抖动，鼻翼因粗重急促的呼吸大幅张合翕动。随着时间推移，在第10秒后情绪达到崩溃顶点，眼皮轻眨的瞬间，大颗饱满的泪珠脱离眼眶顺着脸颊滚落，在湿润的皮肤上留下两条闪光的泪痕；角色嘴角彻底垮塌，嘴巴微张进行无力的叹息呼吸，嘴角两侧牵拉出两根细微透亮的口水丝，末端挂着细小水珠，在侧光折射下反光。最后，双眉瘫软散开，面部所有表情肌垮塌，眼神涣散失焦，完美呈现了灵魂面具彻底碎裂的绝望瞬间。真实皮肤质感，毛孔清晰可见，25帧/秒，4K。
 ```
 
 ### 🇺🇸 英文生产版 (English Version)
 ```text
-Cinematic extreme close-up of a face, dark blurred background, chiaroscuro lighting. 15-second continuous micro-expression morphing, explicit facial muscle controls, no dialogue:
+Based on the character in the reference image, cinematic extreme close-up of a face, dark blurred background, chiaroscuro lighting. Maintain character identity and facial consistency, 15-second continuous micro-expression morphing, explicit facial muscle controls, no dialogue:
 The scene begins with the character holding a perfect celebrity smile, the zygomaticus major pulling the cheeks upward. At 3 seconds, their gaze locks forward; the frontalis contracts to raise the brows, carving deep forehead wrinkles, while the eyes widen in shock with trembling pupils. Soon, a tragic war breaks out across the face; the corrugator supercilii furrows the brow deeply, eye muscles tighten and redden as tears pool in the eyes, and a violent struggle between the zygomatic and depressor anguli oris causes the lower lip and chin to tremor intensely, nostrils flaring with heavy gasps. After 10 seconds, the breakdown peaks; a soft blink releases heavy tears that stream down, leaving wet trails; the mouth parts in weak, hollow breathing as two thin, reflective saliva threads stretch from the mouth corners, glistening under the chiaroscuro light. Finally, the eyebrows sag, all muscles collapse into a blank deadness, and the gaze goes completely out of focus, portraying a shattered mental mask. Visible skin pores, 25fps, 4K.
 ```
