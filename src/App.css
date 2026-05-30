@@ -843,3 +843,452 @@ body {
     justify-content: center;
   }
 }
+
+/* ==========================================
+   Tab Navigation & Multi-workspaces
+   ========================================== */
+
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 10px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.tab-btn:hover {
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tab-btn.active {
+  color: var(--color-gold);
+  text-shadow: 0 0 10px var(--color-gold-glow);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-gold);
+  box-shadow: 0 0 10px var(--color-gold);
+}
+
+/* ==========================================
+   戏骨情绪大图谱 (Emotion Atlas)
+   ========================================== */
+
+.label-helpers {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-link-atlas {
+  background: transparent;
+  border: none;
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.btn-link-atlas:hover {
+  color: var(--color-gold-hover);
+  text-shadow: 0 0 5px var(--color-gold-glow);
+}
+
+.emotion-atlas-container {
+  background: rgba(8, 9, 14, 0.95);
+  border: 1px solid rgba(229, 169, 60, 0.2);
+  border-radius: var(--border-radius-md);
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.atlas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(229, 169, 60, 0.1);
+}
+
+.atlas-header h5 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.btn-atlas-close {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-atlas-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-primary);
+}
+
+.atlas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .atlas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .atlas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.atlas-category-card {
+  background: rgba(10, 11, 16, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: var(--border-radius-sm);
+  padding: 15px;
+}
+
+.atlas-category-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  border-left: 2.5px solid var(--color-cyan);
+  padding-left: 8px;
+}
+
+.atlas-emotion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.atlas-emotion-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.atlas-emotion-item:hover {
+  background: rgba(229, 169, 60, 0.04);
+  border-color: rgba(229, 169, 60, 0.25);
+  transform: translateX(4px);
+}
+
+.atlas-emo-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+}
+
+.atlas-emotion-item:hover .atlas-emo-name {
+  color: var(--color-gold);
+}
+
+.atlas-emo-desc {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* ==========================================
+   剧本情绪强化 (Script Copilot)
+   ========================================== */
+
+.script-copilot-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+@media (min-width: 900px) {
+  .script-copilot-container {
+    grid-template-columns: 4fr 6fr;
+  }
+}
+
+.script-input-card,
+.script-output-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  border-radius: var(--border-radius-lg);
+  padding: 25px;
+  box-shadow: var(--box-shadow-premium);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header-gold,
+.panel-header-cyan {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.panel-header-gold h3 {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.panel-header-cyan h3 {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  color: var(--color-cyan);
+  font-weight: 700;
+}
+
+.script-tutorial {
+  background: rgba(229, 169, 60, 0.03);
+  border-left: 3px solid var(--color-gold);
+  padding: 10px 14px;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  margin-bottom: 15px;
+}
+
+.script-tutorial p {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.script-textarea {
+  flex: 1;
+  background: rgba(10, 11, 16, 0.8);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-md);
+  padding: 18px;
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  outline: none;
+  resize: none;
+  min-height: 200px;
+  transition: var(--transition-smooth);
+}
+
+.script-textarea:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 15px var(--color-gold-glow);
+}
+
+.btn-analyze-script {
+  margin-top: 15px;
+  background: linear-gradient(135deg, var(--color-gold) 0%, #b8860b 100%);
+  color: #06070a;
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 15px rgba(229, 169, 60, 0.2);
+}
+
+.btn-analyze-script:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 169, 60, 0.4);
+}
+
+.btn-analyze-script:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Right Side: Results output */
+.script-empty-state {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  padding: 40px;
+}
+
+.script-results-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.extracted-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.meta-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.meta-badge.char {
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--color-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.15);
+}
+
+.meta-badge.emotion {
+  background: rgba(229, 169, 60, 0.1);
+  color: var(--color-gold);
+  border: 1px solid rgba(229, 169, 60, 0.15);
+}
+
+.dialogue-preview {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--color-text-primary);
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 12px 18px;
+  border-left: 3px solid var(--color-cyan);
+}
+
+.recommendation-header {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.enhanced-paths-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.path-recommendation-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: var(--border-radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: var(--transition-smooth);
+}
+
+.path-recommendation-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(0, 242, 254, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.path-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.path-idx {
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--color-cyan);
+  color: #06070a;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.path-card-header h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.path-desc {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.path-breathing {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  border-top: 1px dashed rgba(255, 255, 255, 0.05);
+  padding-top: 8px;
+}
+
+.breath-indicator {
+  font-weight: 600;
+  color: var(--color-gold);
+}
+
+.btn-adopt-emotion {
+  align-self: flex-start;
+  background: rgba(0, 242, 254, 0.05);
+  border: 1px solid rgba(0, 242, 254, 0.15);
+  color: var(--color-cyan);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-adopt-emotion:hover {
+  background: var(--color-cyan);
+  color: #06070a;
+  box-shadow: 0 0 10px var(--color-cyan-glow);
+  transform: translateX(4px);
+}
+
